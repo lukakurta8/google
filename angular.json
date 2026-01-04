@@ -21,7 +21,8 @@
             "assets": [
               
               "src/favicon2.ico",
-            "src/assets"
+            "src/assets",
+             "src/_redirects"
               
             ],
             "styles": [
