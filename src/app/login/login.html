@@ -1,0 +1,41 @@
+<section>
+<div class="login-container">
+    <div class="logo">
+        <img src="assets/google-logo-on-transparent-white-background-free-vector.jpg" alt="">
+        <h1>Sign in to Chrome</h1>
+        <p>Use your Google Account</p>
+    </div>
+    <div class="input-email">
+    <div class="login">
+    <div class="input-group">
+  <input
+    type="email"
+    id="email"
+    placeholder=" "
+    [(ngModel)]="email"
+    #emailCtrl="ngModel"
+    required
+    email
+  />
+  <label for="email">Email or phone</label>
+</div>
+
+<!-- Error message -->
+<p class="error" *ngIf="showError && emailCtrl.invalid">
+  Enter a valid email or phone number
+</p>
+
+        <a href="#">Forgot email?</a>
+        <p class="guest">Not your computer? Use Guest mode to sign in privately. <span class="more">Learn more about using Guest mode</span></p>
+    </div>
+    <div class="next">
+        <button class="create">Create account</button>
+        <button class="next-button" (click)="saveEmail()">Next</button>    </div>
+</div>
+</div>
+<nav>
+    <a href="#">Help</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+</nav>
+</section>

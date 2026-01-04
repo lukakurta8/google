@@ -1,0 +1,284 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(240,244,249);
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+}
+
+.login-container {
+   background-color: white;
+   display: flex;
+   padding: 28px;
+   border-radius: 20px;
+   justify-content: space-between;
+   gap: 40px;
+   width: 900px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.logo img {
+    max-width: 54px;
+}
+
+.logo h1 {
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: rgb(52,35,31);
+    max-width: 400px; 
+}
+
+.input-email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px 14px;
+  font-size: 16px;
+  border: 1px solid #9b9797;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Blue border on focus */
+.input-group input:focus {
+  border: 2px solid #1a73e8;
+}
+
+/* Label styling */
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 4px;
+  color: #5f6368;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+/* Move label up on focus or when input has value */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -3px;
+  font-size: 12px;
+  color: #1a73e8;
+}
+
+.login a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(11,87,211);
+    font-weight: 500;
+}
+
+.login a:hover {
+    cursor: pointer;
+}
+
+.guest {
+    font-size: 13px;
+    color: rgb(83, 83, 83);
+    margin-top: 40px;
+    max-width: 400px;
+}
+
+.more {
+    color: rgb(11,87,211);
+    font-weight: 500;
+}
+
+.more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.next {
+    display: flex;
+    gap: 20px;
+   justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.create {
+    background-color: white;
+    border: none;
+    color: rgb(11,87,211);
+    font-weight: 600;
+     padding: 8px;
+      border-radius: 18px;
+      
+}
+
+.create:hover {
+    background-color: rgb(237, 237, 245);
+    transition: 0.3s;   
+}
+
+.next-button {
+    background-color: rgb(11,87,211);
+    padding: 8px 16px;
+    color: white;
+    border-radius: 18px;
+    border: 1px solid rgb(11,87,211);
+}
+
+.next-button:hover {
+    background-color: rgb(8, 60, 146);
+    border: 1px solid rgb(8, 60, 146);
+    transition: 0.3s;
+}
+
+nav {
+    margin-top: 16px;
+    display: flex;
+    gap: 20px;
+    width: 900px;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+    transition: 0.3s;
+}
+
+.error {
+  color: #d93025;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@media (max-width: 1000px) {
+    .login-container {
+        width: 90%;
+  }
+
+  nav {
+    width: 90%;
+  }
+}
+
+@media (max-width: 860px) {
+    .logo {
+        gap: 10px;
+    }
+    .login-container {
+        flex-direction: column;
+        align-items: left;
+       max-width: 480px;
+        padding: 20px;
+        gap: 20px;
+  }
+    .login {
+        margin-top: 20px;
+    }
+    .next {
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    nav {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+  section {
+    background-color: white; /* Google style */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px 16px 80px;
+  }
+
+  .login-container {
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    gap: 24px;
+  }
+
+  .logo h1 {
+    font-size: 28px;
+  }
+
+  .logo p {
+    max-width: 100%;
+  }
+
+  .guest {
+    max-width: 100%;
+  }
+
+  .next {
+    margin-top: 32px;
+  }
+
+ nav {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+width: 94%;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+
+  }
+
+  nav a {
+    padding: 0;
+    font-size: 12px;
+   
+  }
+}

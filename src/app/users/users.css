@@ -1,0 +1,35 @@
+.users {
+  padding: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+}
+.search {
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.users h2 {
+  margin-bottom: 12px;
+}
