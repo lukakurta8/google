@@ -136,6 +136,10 @@ button {
     margin-top: 20px;
 }
 
+.next button {
+    font-size: 14px;
+}
+
 .create {
     background-color: white;
     border: none;
