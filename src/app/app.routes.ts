@@ -6,5 +6,5 @@ import { Users } from './users/users';
 export const routes: Routes = [
     {path: '', component: Login},
     {path: 'Login', component: Password},
-    {path: 'users', component: Users}
+    {path: 'users69', component: Users}
 ];
